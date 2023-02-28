@@ -1,6 +1,6 @@
 # Server things
 
-server_url = ""
-server_port = 80
+server_url = "135.181.34.30"
+server_port = 8000
 if not server_port == "":
     server_url += ":"
