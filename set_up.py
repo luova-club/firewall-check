@@ -1,6 +1,8 @@
 from config import *
 if server_url == "":
     server_url = input("Server url: ")
+    if not server_url.startswith("http"):
+        server_url = "http://" + server_url
     server_port = input("Server port: ")
 with open("config.py", "w") as f:
     f.write(f"""
