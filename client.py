@@ -21,7 +21,7 @@ def read_log():
     return logs_dict
 
 
-response = requests.post(f"{server_url}{server_port}", json=read_log())
+response = requests.post(f"{server_url}{server_port}/upload", json=read_log())
 print(response.text)
 respon = response.json()
 to_ban = []
