@@ -6,7 +6,7 @@ with open("config.py", "w") as f:
     f.write(f"""
 server_url = "{server_url}"
 server_port = "{server_port}"
-server_url += ":""""")
+server_url += ':'""")
     
 from crontab import CronTab
 my_cron = CronTab(user='root')
